@@ -23,7 +23,7 @@ public class SignUpTest
 		System.setProperty("webdriver.chrome.driver", "C:/Users/Administrator/Downloads/chromedriver_win32/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
         driver.get("http://www.facebook.com");
-        driver.findElement(By.id("asad")).sendKeys("Hello");
+        driver.findElement(By.id("email")).sendKeys("asad.zaman@target.com");
         Thread.sleep(5000);
         driver.quit();
     }
