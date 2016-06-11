@@ -17,11 +17,11 @@ public class SignUpTest
     {
    
         DesiredCapabilities capability = DesiredCapabilities.firefox();
-        //WebDriver driver = new RemoteWebDriver(new URL("http://192.168.1.16:4444/wd/hub"), capability);
+        //WebDriver driver = new RemoteWebDriver(new URL("http://52.35.94.10:4444/wd/hub"), capability);
         WebDriver driver = new FirefoxDriver();
         driver.get("http://www.facebook.com");
         Thread.sleep(5000);
-        driver.close();
+        driver.quit();
     }
 
 }
