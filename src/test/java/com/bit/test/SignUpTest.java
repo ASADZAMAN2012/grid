@@ -5,6 +5,7 @@ import java.net.URL;
 
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -16,9 +17,10 @@ public class SignUpTest
 	public void login() throws MalformedURLException, Exception
     {
    
-        DesiredCapabilities capability = DesiredCapabilities.firefox();
+        //DesiredCapabilities capability = DesiredCapabilities.firefox();
         //WebDriver driver = new RemoteWebDriver(new URL("http://52.35.94.10:4444/wd/hub"), capability);
-        WebDriver driver = new FirefoxDriver();
+		System.setProperty("webdriver.chrome.driver", "/Users/z0024nn/Downloads/chromedriver");
+		WebDriver driver = new ChromeDriver();
         driver.get("http://www.facebook.com");
         Thread.sleep(5000);
         driver.quit();
