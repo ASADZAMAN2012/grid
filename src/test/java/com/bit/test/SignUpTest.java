@@ -19,7 +19,7 @@ public class SignUpTest
    
         //DesiredCapabilities capability = DesiredCapabilities.firefox();
         //WebDriver driver = new RemoteWebDriver(new URL("http://52.35.94.10:4444/wd/hub"), capability);
-		System.setProperty("webdriver.chrome.driver", "/Users/z0024nn/Downloads/chromedriver");
+		System.setProperty("webdriver.chrome.driver", "C:/Users/Administrator/Downloads/chromedriver_win32/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
         driver.get("http://www.facebook.com");
         Thread.sleep(5000);
